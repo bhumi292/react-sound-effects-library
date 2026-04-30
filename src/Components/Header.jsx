@@ -1,4 +1,5 @@
 import { useState } from "react";
+import waves from "../assets/wave.png";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,7 +11,7 @@ function Header() {
       <div className="flex items-center justify-between">
 
         {/* Logo */}
-        <img src="/logo.png" alt="Logo" className="h-8" />
+        <img src={waves} alt="Logo" className="h-8" />
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6">

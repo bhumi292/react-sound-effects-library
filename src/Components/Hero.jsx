@@ -1,16 +1,19 @@
-
+import heroImg from "../assets/hero.jpg";
 
 function Hero() {
   return (
-     <section className="bg-gray-100 py-20 text-center">
+    <section 
+      className="py-20 text-center bg-cover bg-center"
+      style={{ backgroundImage: `url(${heroImg})` }}
+    >
       
-      <div className="max-w-4xl mx-auto px-4">
+      <div className="max-w-4xl mx-auto px-4 p-6 rounded">
 
-        <h1 className="text-3xl md:text-5xl font-bold text-gray-800 leading-tight">
+        <h1 className="text-3xl md:text-5xl font-bold text-white leading-tight">
           Trusted by top Youtuber and Production House
         </h1>
 
-        <p className="mt-6 text-gray-600 text-lg md:text-xl">
+        <p className="mt-6 text-white text-lg md:text-xl">
           Best sound effects for youtube videos. 
           Download high-quality audio without copyright.
         </p>
