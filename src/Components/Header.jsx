@@ -5,13 +5,13 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-500 text-white px-6 py-3">
+    <nav className="bg-black text-white px-6 py-6">
 
       {/* Top Bar */}
       <div className="flex items-center justify-between">
 
         {/* Logo */}
-        <img src={waves} alt="Logo" className="h-8" />
+        <img src={waves} alt="Logo" className="h-10" />
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-6">
@@ -23,7 +23,7 @@ function Header() {
         </ul>
 
         {/* Login Button (Desktop) */}
-        <button className="hidden md:block bg-white text-blue-500 px-4 py-1 rounded hover:bg-gray-200">
+        <button className="hidden md:block bg-blue-400 text-white px-4 py-1 rounded hover:bg-gray-200">
           Login
         </button>
 
