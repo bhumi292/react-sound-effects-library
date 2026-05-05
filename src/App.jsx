@@ -1,6 +1,7 @@
 
 import Header from './Components/Header'
 import Hero from './Components/Hero';
+import Production from './Components/Production';
 
 function App() {
  
@@ -9,6 +10,7 @@ function App() {
     <>
       <Header/>
       <Hero/>
+      <Production/>
     </>
   )
 }
