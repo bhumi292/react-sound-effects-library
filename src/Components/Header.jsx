@@ -1,5 +1,5 @@
 import { useState } from "react";
-import waves from "../assets/wave.png";
+import waves from "../assets/img/wave.png";
 
 function Header() {
   const [isOpen, setIsOpen] = useState(false);
