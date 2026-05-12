@@ -65,37 +65,16 @@ function S_list() {
 
         {/* Categories */}
         <ul className="flex gap-8 flex-wrap text-lg">
-
-          <li className="font-bold underline cursor-pointer">
-            All
-          </li>
-
-          <li className="cursor-pointer hover:text-blue-500">
-            Jumpscare
-          </li>
-
-          <li className="cursor-pointer hover:text-blue-500">
-            Mellow
-          </li>
-
-          <li className="cursor-pointer hover:text-blue-500">
-            Happiness
-          </li>
-
-          <li className="cursor-pointer hover:text-blue-500">
-            Ambience
-          </li>
-
-          <li className="cursor-pointer hover:text-blue-500">
-            Zonk
-          </li>
-
+          <li className="font-bold underline cursor-pointer">All</li>
+          <li className="cursor-pointer hover:text-blue-500">Jumpscare</li>
+          <li className="cursor-pointer hover:text-blue-500">Mellow</li>
+          <li className="cursor-pointer hover:text-blue-500">Happiness</li>
+          <li className="cursor-pointer hover:text-blue-500">Ambience</li>
+          <li className="cursor-pointer hover:text-blue-500">Zonk</li>
         </ul>
 
         {/* Filter Button */}
-        <button className="border px-5 py-2 rounded-md hover:bg-gray-100">
-          Filter
-        </button>
+        <button className="border px-5 py-2 rounded-md hover:bg-gray-100">Filter</button>
 
       </div>
 
@@ -120,49 +99,32 @@ function S_list() {
               </button>
 
               <div>
-                <h3 className="font-semibold">
-                  {sound.name}
-                </h3>
-
-                <p className="text-gray-500">
-                  {sound.time}
-                </p>
+                <h3 className="font-semibold">{sound.name}</h3>
+                <p className="text-gray-500">{sound.time}</p>
               </div>
 
             </div>
 
             {/* Description */}
-            <p className="text-gray-500">
-              {sound.desc}
-            </p>
-
+            <p className="text-gray-500">{sound.desc}</p>
+            
             {/* Category */}
-            <p className="text-gray-500">
-              {sound.category}
-            </p>
+            <p className="text-gray-500">{sound.category}</p>
 
             {/* Icons */}
             <div className="flex items-center gap-4">
-
               <Heart className="cursor-pointer hover:text-red-500" />
-
               <Download className="cursor-pointer hover:text-blue-500" />
-
               <MoreHorizontal className="cursor-pointer" />
-
             </div>
 
           </div>
 
         ))}
-
       </div>
 
       {/* Bottom Link */}
-      <button className="mt-12 text-blue-600 underline">
-        See all sound effects
-      </button>
-
+      <button className="mt-12 text-blue-600 underline">See all sound effects</button>
     </div>
   );
 }
