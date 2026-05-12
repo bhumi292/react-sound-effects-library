@@ -53,10 +53,10 @@ function S_list() {
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-14">
+    <div className="max-w-6xl mx-auto px-6 py-14">
 
       {/* Heading */}
-      <h1 className="text-4xl font-bold mb-12">
+      <h1 className="text-2xl font-bold mb-12">
         Best sound effects for youtube videos
       </h1>
 
@@ -100,7 +100,7 @@ function S_list() {
       </div>
 
       {/* Table Rows */}
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-2">
 
         {sounds.map((sound) => (
 
@@ -110,11 +110,11 @@ function S_list() {
           >
 
             {/* Left */}
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-2">
 
               <button className="bg-blue-100 p-3 rounded-full">
                 <Play
-                  size={18}
+                  size={10}
                   className="text-blue-500 fill-blue-500"
                 />
               </button>
@@ -132,17 +132,17 @@ function S_list() {
             </div>
 
             {/* Description */}
-            <p className="text-gray-700">
+            <p className="text-gray-500">
               {sound.desc}
             </p>
 
             {/* Category */}
-            <p className="text-gray-700">
+            <p className="text-gray-500">
               {sound.category}
             </p>
 
             {/* Icons */}
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-4">
 
               <Heart className="cursor-pointer hover:text-red-500" />
 
