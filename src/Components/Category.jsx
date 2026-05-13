@@ -1,71 +1,72 @@
-import musicImg from "../assets/img/music.png";
-import industryImg from "../assets/img/industry.jpg";
-import movieImg from "../assets/category/movie.jpg";
-import animalImg from "../assets/category/animal.jpg";
-import peopleImg from "../assets/category/people.jpg";
-import vehicleImg from "../assets/category/vehicle.jpg";
-import soundImg from "../assets/category/sound.jpg";
-import emergencyImg from "../assets/category/emergency.jpg";
-import bellImg from "../assets/category/bell.jpg";
-import natureImg from "../assets/category/nature.jpg";
-import cartoonImg from "../assets/category/cartoon.jpg";
-import horrorImg from "../assets/category/horror.jpg";
+import img1 from "../assets/img/music.png";
+import img2 from "../assets/img/industry.png";
+import img3 from "../assets/img/movie.png";
+import img4 from "../assets/img/animal.png";
+import img5 from "../assets/img/peoples.png";
+import img6 from "../assets/img/cars.png";
+import img7 from "../assets/img/sound-design.png";
+import img8 from "../assets/img/bell.png";
+import img9 from "../assets/img/sos.png";
+import img10 from "../assets/img/nature.png";
+import img11 from "../assets/img/cartoon.png";
+import img12 from "../assets/img/horror.png";
 
 function Category() {
+
   const categories = [
-    { id: 1, title: "Music", image: musicImg },
-    { id: 2, title: "Industry", image: industryImg },
-    { id: 3, title: "Movie", image: movieImg },
-    { id: 4, title: "Animal", image: animalImg },
-    { id: 5, title: "People", image: peopleImg },
-    { id: 6, title: "Vehicle", image: vehicleImg },
-    { id: 7, title: "Sound-design", image: soundImg },
-    { id: 8, title: "Emergency", image: emergencyImg },
-    { id: 9, title: "Bell", image: bellImg },
-    { id: 10, title: "Nature", image: natureImg },
-    { id: 11, title: "Cartoon", image: cartoonImg },
-    { id: 12, title: "Horror", image: horrorImg },
+    { id: 1, title: "Music", image: img1 },
+    { id: 2, title: "Industry", image: img2 },
+    { id: 3, title: "Movie", image: img3 },
+    { id: 4, title: "Animal", image: img4 },
+    { id: 5, title: "People", image: img5 },
+    { id: 6, title: "Vehicle", image: img6 },
+    { id: 7, title: "Sound-design", image: img7 },
+    { id: 8, title: "Emergency", image: img8 },
+    { id: 9, title: "Bell", image: img9 },
+    { id: 10, title: "Nature", image: img10 },
+    { id: 11, title: "Cartoon", image: img11 },
+    { id: 12, title: "Horror", image: img12 },
   ];
 
   return (
-    <div className="max-w-7xl mx-auto px-6 py-16">
+    <div className="max-w-8xl mx-auto px-16 py-6">
 
       {/* Heading */}
-      <h1 className="text-4xl font-bold mb-12">
+      <h1 className="text-2xl font-bold mb-12">
         Browse by category
       </h1>
 
       {/* Gallery */}
-      <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
+     <div className="flex flex-wrap justify-center gap-6">
 
-        {categories.map((item) => (
+  {categories.map((item) => (
 
-          <div
-            key={item.id}
-            className="relative overflow-hidden rounded-lg cursor-pointer group"
-          >
+    <div
+      key={item.id}
+      className="relative overflow-hidden rounded-lg cursor-pointer group w-[180px]"
+    >
 
-            {/* Image */}
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-full h-40 object-cover group-hover:scale-110 transition duration-500"
-            />
+      {/* Image */}
+      <img
+        src={item.image}
+        alt={item.title}
+        className="w-full h-40 object-cover group-hover:scale-110 transition duration-500"
+      />
 
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
 
-              <h2 className="text-white text-xl font-semibold text-center">
-                {item.title}
-              </h2>
-
-            </div>
-
-          </div>
-
-        ))}
+        <h2 className="text-white text-xl font-semibold text-center">
+          {item.title}
+        </h2>
 
       </div>
+
+    </div>
+
+  ))}
+
+</div>
 
       {/* Bottom Link */}
       <button className="mt-12 text-blue-600 underline">
