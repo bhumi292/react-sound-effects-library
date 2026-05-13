@@ -53,7 +53,7 @@ function S_list() {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto px-6 py-14">
+    <div className="max-w-7xl mx-auto px-6 py-14">
 
       {/* Heading */}
       <h1 className="text-2xl font-bold mb-12">

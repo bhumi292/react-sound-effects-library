@@ -29,7 +29,7 @@ function Category() {
   ];
 
   return (
-    <div className="max-w-8xl mx-auto px-16 py-6">
+    <div className="max-w-7xl mx-auto px-16 py-6">
 
       {/* Heading */}
       <h1 className="text-2xl font-bold mb-12">
@@ -39,11 +39,11 @@ function Category() {
       {/* Gallery */}
      <div className="flex flex-wrap justify-center gap-6">
 
-  {categories.map((item) => (
+        {categories.map((item) => (
 
     <div
       key={item.id}
-      className="relative overflow-hidden rounded-lg cursor-pointer group w-[180px]"
+      className="relative overflow-hidden cursor-pointer group w-[160px]"
     >
 
       {/* Image */}
