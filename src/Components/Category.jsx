@@ -29,7 +29,7 @@ function Category() {
   ];
 
   return (
-   <div className="max-w-5xl mx-auto px-16 py-6">
+   <div className="max-w-8xl mx-auto px-16 py-6">
 
       {/* Heading */}
       <h1 className="text-lg font-bold mb-12">
@@ -45,7 +45,7 @@ function Category() {
 
     <div
       key={rowIndex}
-      className="flex justify-center gap-2 px-20"
+      className="flex justify-center gap-4 px-20"
     >
 
       {categories
@@ -54,7 +54,7 @@ function Category() {
 
           <div
             key={item.id}
-            className="relative overflow-hidden cursor-pointer group w-[170px] h-[125px] flex-shrink-0"
+            className="relative overflow-hidden cursor-pointer group w-[150px] h-[110px] flex-shrink-0"
           >
 
             <img
