@@ -3,7 +3,8 @@ import Header from './Components/Header'
 import Hero from './Components/Hero';
 import Production from './Components/Production';
 import S_list from './Components/S_list';
-import S_six from './Components/S_six';
+import WhyUs from './Components/WhyUs';
+
 
 function App() {
  
@@ -15,7 +16,7 @@ function App() {
       <Production/>
       <S_list/>
       <Category/>
-      <S_six/>
+      <WhyUs/>
       
     </>
   )
