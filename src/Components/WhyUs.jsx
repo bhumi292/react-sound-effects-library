@@ -38,16 +38,16 @@ function WhyUs() {
 
     <div className="max-w-7xl mx-auto px-10 py-20">
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
 
         {/* Left Section */}
         <div>
 
-          <h1 className="text-5xl font-bold leading-tight">
+          <h1 className="text-2xl font-bold leading-tight text-orange-500 text-center">
             Why-us?
           </h1>
 
-          <p className="mt-6 text-gray-600 text-lg leading-8 max-w-md">
+          <p className="mt-6 text-black font-bold  text-2xl leading-8 max-w-md text-center">
 
             We are provide the best quality sound
             effects without copyright.
@@ -74,7 +74,7 @@ function WhyUs() {
                 {item.title}
               </h3>
 
-              <p className="mt-4 text-gray-600 leading-7">
+              <p className="mt-4 text-black leading-7">
                 {item.desc}
               </p>
 
