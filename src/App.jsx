@@ -19,6 +19,7 @@ function App() {
       <Category/>
       <WhyUs/>
       <Pricing/>
+
       
     </>
   )
