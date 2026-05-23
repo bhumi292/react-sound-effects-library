@@ -1,5 +1,5 @@
-import { FaQuoteLeft } from "react-icons/fa";
 
+import quotes from  "../assets/img/Group.png";
 import user1 from "../assets/img/image-1.png";
 import user2 from "../assets/img/image-2.png";
 import user3 from "../assets/img/image-3.png";
@@ -62,7 +62,11 @@ function Testimonial() {
             {/* Quote Icon */}
             <div className="flex justify-center text-orange-600 text-2xl">
 
-              <FaQuoteLeft />
+              <img
+                  src={quotes}
+                  alt="quote"
+                  className="w-7 h-5"
+              />
 
             </div>
 
