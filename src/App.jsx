@@ -1,4 +1,5 @@
 import Category from './Components/Category';
+import Footer from './Components/Footer';
 import Header from './Components/Header'
 import Hero from './Components/Hero';
 import Pricing from './Components/Pricing';
@@ -21,7 +22,7 @@ function App() {
       <WhyUs/>
       <Pricing/>
       <Testimonial/>
-      
+      <Footer/>
     </>
   )
 }
