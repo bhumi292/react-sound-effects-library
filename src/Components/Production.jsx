@@ -18,16 +18,16 @@ function Production() {
       </h2>
 
       {/* Logo Row */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+      <div className="flex justify-center items-center gap-8 md:gap-14 lg:gap-20 flex-wrap">
 
-  {images.map((img, index) => (
-    <img
-      key={index}
-      src={img}
-      alt="category"
-      className="w-full h-auto object-cover"
-    />
-  ))}
+        {images.map((img, index) => (
+          <img
+            key={index}
+            src={img}
+            alt="brand"
+            className="h-10 md:h-12 lg:h-14 w-20 object-contain opacity-80 hover:opacity-100 transition"
+          />
+        ))}
 
       </div>
 
