@@ -10,28 +10,36 @@ function Production() {
   const images = [img1, img2, img3, img4, img5, img6, img7];
 
   return (
-    <div className="py-10 px-4 text-center">
+   <div className="py-10 px-4 text-center">
 
-      {/* Title */}
-      <h2 className="text-lg md:text-xl font-medium mb-8">
-        Trusted by top Youtuber and Production House
-      </h2>
+  {/* Title */}
+  <h2 className="text-base sm:text-lg md:text-xl font-medium mb-8">
+    Trusted by top Youtuber and Production House
+  </h2>
 
-      {/* Logo Row */}
-      <div className="flex justify-center items-center gap-8 md:gap-14 lg:gap-20 flex-wrap">
+  {/* Logo Row */}
+  <div className="flex flex-wrap justify-center items-center gap-6 sm:gap-8 md:gap-12 lg:gap-16">
 
-        {images.map((img, index) => (
-          <img
-            key={index}
-            src={img}
-            alt="brand"
-            className="h-10 md:h-12 lg:h-14 w-20 object-contain opacity-80 hover:opacity-100 transition"
-          />
-        ))}
+    {images.map((img, index) => (
+      <img
+        key={index}
+        src={img}
+        alt="brand"
+        className="
+          h-8 sm:h-10 md:h-12 lg:h-14
+          w-auto
+          max-w-[100px] sm:max-w-[120px]
+          object-contain
+          opacity-80
+          hover:opacity-100
+          transition
+        "
+      />
+    ))}
 
-      </div>
+  </div>
 
-    </div>
+</div>
   );
 }
 
