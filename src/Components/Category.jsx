@@ -29,7 +29,7 @@ function Category() {
   ];
 
   return (
-   <div className="max-w-8xl mx-auto px-16 py-6">
+   <div className="max-w-7xl mx-auto px-4 sm:px-8 md:px-12 py-6">
 
       {/* Heading */}
       <h1 className="text-lg font-bold mb-12">
@@ -37,43 +37,28 @@ function Category() {
       </h1>
 
   {/* Gallery */}
-<div className="flex flex-col items-center gap-6">
+<div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-4">
 
-  {Array.from({
-    length: Math.ceil(categories.length / 7),
-  }).map((_, rowIndex) => (
+  {categories.map((item) => (
 
     <div
-      key={rowIndex}
-      className="flex justify-center gap-4 px-20"
+      key={item.id}
+      className="relative overflow-hidden cursor-pointer group w-full h-[100px] sm:h-[110px]"
     >
 
-      {categories
-        .slice(rowIndex * 7, rowIndex * 7 + 7)
-        .map((item) => (
+      <img
+        src={item.image}
+        alt={item.title}
+        className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+      />
 
-          <div
-            key={item.id}
-            className="relative overflow-hidden cursor-pointer group w-[150px] h-[110px] flex-shrink-0"
-          >
+      <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
 
-            <img
-              src={item.image}
-              alt={item.title}
-              className="w-full h-full object-cover group-hover:scale-110 transition duration-500"
-            />
+        <h2 className="text-white text-xs sm:text-sm text-center px-2">
+          {item.title}
+        </h2>
 
-            <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
-
-              <h2 className="text-white text-s text-center">
-                {item.title}
-              </h2>
-
-            </div>
-
-          </div>
-
-      ))}
+      </div>
 
     </div>
 
