@@ -36,59 +36,60 @@ function WhyUs() {
 
   return (
 
-    <div className="max-w-7xl mx-auto px-10 py-20">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 md:px-10 py-12 md:py-20">
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16">
 
-        {/* Left Section */}
-        <div>
+    {/* Left Section */}
+    <div className="text-center lg:text-left">
 
-          <h1 className="text-2xl font-bold leading-tight text-orange-500 text-center">
-            Why-us?
-          </h1>
+      <h1 className="text-xl sm:text-2xl font-bold text-orange-500">
+        Why-us?
+      </h1>
 
-          <p className="mt-6 text-black font-bold  text-2xl leading-8 max-w-md text-center">
+      <p className="mt-4 text-black font-bold text-2xl sm:text-3xl leading-relaxed max-w-md mx-auto lg:mx-0">
+        We are provide the best quality sound
+        effects without copyright.
+      </p>
 
-            We are provide the best quality sound
-            effects without copyright.
+    </div>
 
+    {/* Right Section */}
+   <div className="grid grid-cols-2 lg:grid-cols-2 gap-6 md:gap-8">
+
+      {stats.map((item) => (
+
+        <div
+          key={item.id}
+          className="text-center sm:text-left"
+        >
+
+          {/* Image */}
+          <img
+            src={item.image}
+            alt={item.title}
+            className="w-14 h-14 object-contain mx-auto sm:mx-0"
+          />
+
+          <h3 className="mt-4 text-lg sm:text-xl font-semibold">
+            {item.title}
+          </h3>
+
+          <p className="mt-3 text-black leading-7 text-sm sm:text-base">
+            {item.desc}
           </p>
 
         </div>
 
-        {/* Right Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
-
-          {stats.map((item) => (
-
-            <div key={item.id}>
-
-              {/* Image */}
-              <img
-                src={item.image}
-                alt={item.title}
-                className="w-14 h-14 object-contain"
-              />
-
-              <h3 className="mt-4 text-xl font-semibold">
-                {item.title}
-              </h3>
-
-              <p className="mt-4 text-black leading-7">
-                {item.desc}
-              </p>
-
-            </div>
-
-          ))}
-
-        </div>
-
-      </div>
+      ))}
 
     </div>
+
+  </div>
+
+</div>
 
   );
 }
 
-export default WhyUs
+export default WhyUs;
